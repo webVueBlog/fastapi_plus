@@ -2,6 +2,27 @@
 
 这是一个Python FastAPI项目工程库，包含DB、Redis、MongoDB、JSON等工具和基础服务类。
 
+```
+fastapi_plus/
+├── __init__.py
+├── main.py                  ← 启动入口
+├── config/                  ← 配置（如数据库连接）
+│   └── settings.py
+├── controller/              ← 控制器（FastAPI 路由）
+│   └── user_controller.py
+├── dao/                     ← 数据访问层（可选）
+│   └── user_dao.py
+├── model/                   ← SQLAlchemy 模型定义
+│   └── user_model.py
+├── schema/                  ← Pydantic 数据校验模型
+│   └── user_schema.py
+├── service/                 ← 业务逻辑处理层
+│   └── user_service.py
+├── utils/                   ← 工具类、通用方法
+│   └── crypto_utils.py
+
+```
+
 ### 组件：
 
 - FastAPI: https://fastapi.tiangolo.com/
